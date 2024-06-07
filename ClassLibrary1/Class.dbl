@@ -1,0 +1,13 @@
+import System
+namespace ClassLibrary1
+
+    public class Class
+
+        public method Class
+        proc
+            data parser = %xml_parser_create()
+        endmethod
+
+    endclass
+
+endnamespace

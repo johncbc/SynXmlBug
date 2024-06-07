@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk" DefaultTargets="restore;Build">
+  <PropertyGroup>
+    <TargetFramework Condition="'$(TargetFrameworkOverride)' == ''">net6.0</TargetFramework>
+    <TargetFramework Condition="'$(TargetFrameworkOverride)' != ''">$(TargetFrameworkOverride)</TargetFramework>
+    <DefaultLanguageSourceExtension>.dbl</DefaultLanguageSourceExtension>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <ProjectGuid>{6e3db36e-4a29-477f-ab53-7a11a8e43a11}</ProjectGuid>
+    <Name>ClassLibrary1</Name>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Class.dbl" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Synergex.SynergyDE.Build" Version="24.*" />
+    <PackageReference Include="Synergex.SynergyDE.synrnt" Version="12.*" />
+    <PackageReference Include="Synergex.SynergyDE.synxml">
+      <Version>12.3.1.1014</Version>
+    </PackageReference>
+  </ItemGroup>
+</Project>
